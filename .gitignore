@@ -1,0 +1,7 @@
+# 忽略*.o和*.a文件
+/Library
+/Temp
+/.vs
+/*.csproj
+/*.sln
+/Logs
