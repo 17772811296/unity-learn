@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: New Sprite Atlas 1
+  m_EditorData:
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 100
+      maxTextureSize: 2048
+      textureCompression: 2
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 1
+      sRGB: 1
+    platformSettings: []
+    packingParameters:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 0.5
+    packables: []
+    totalSpriteSurfaceArea: 0
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 4343727234628468602, guid: 410b60dded3a9be4c92927f67dd2bbb9,
+    type: 2}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 7f64cdf7f43031a4ba870da2002ba4f8, type: 3}
+  - {fileID: 21300000, guid: 0a6bf7c91f60b44e394de1a7319e4be6, type: 3}
+  - {fileID: 21300000, guid: 486746de4b7d94ee4bdeb39d2c5d6695, type: 3}
+  - {fileID: 21300000, guid: 460541cbfefac46c4977a53af0856c32, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - unity
+  - beibao_anniu_1
+  - beibao_anniu_3
+  - beibao_anniu_4
+  m_Tag: New Sprite Atlas
+  m_IsVariant: 1

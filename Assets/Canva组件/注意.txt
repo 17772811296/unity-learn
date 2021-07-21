@@ -1,0 +1,20 @@
+1.Canvas worldSpace（3D)布局，可以将camera正交摄像机摄影出来的UI元素绘制在Canvas面板上
+2.Canvas必须绑定CanvasScaler组件
+3.现在主流手机使用的比例为16：9分辨率比例
+4.为了兼容低配置手机分辨率设置为1136*640
+5.camera depth 设置为0，且正交
+6.clippingPlans最小值建议设置为0
+锚点对齐：相对于父级
+背景图片拉伸分为两种：1.容许图片变形，2.不容许图片变形，可以自动裁切
+1.容许变形：锚点横向，纵向拉伸
+2.不容许：给背景Image添加组件 Aspect Ratio Fitter组件，且AspectMode设置为Envelope Parent
+
+Content Size Fitter想立即获得正确的区域，可以使用下面的代码
+LayoutRebuidler.ForceRebuildLayoutImmediate(rectTransform)
+
+Canvas优化：
+UGUI会自动合并批次，原理是它会把一个Canvas下的所有元素合并成一个mesh里。
+如果Canvas下面的元素比较多，任意一个元素发生位置改变，或者大小改变，这样就会
+降低它合并mesh的开销，尤其是频繁的改动，可能会造成卡顿，最好的解决方式是，每个panel
+设置一个Canvas，或者多个Canvas套嵌，但是Canvas多了Mesh合并减低了，但是DrawCall又上来了
+因为买个Canvas会独占一个DrawCall。
