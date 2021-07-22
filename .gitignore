@@ -5,3 +5,5 @@
 /*.csproj
 /*.sln
 /Logs
+/obj
+/Packages
